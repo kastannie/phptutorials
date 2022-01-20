@@ -9,7 +9,8 @@
 <body>
 
 <section class="signup-form">
-
+    <h2>Sign Up</h2>
+    <div class="sign-form-form">
 <form action="process.php" method="post">
     <input type="text" name="name" placeholder="Full name...">
     <input type="text" name="email" placeholder="Email...">
