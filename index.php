@@ -11,8 +11,12 @@
 <section class="signup-form">
 
 <form action="process.php" method="post">
-    Enter your name: <input name="name" type="text">
-    <input type="submit">
+    <input type="text" name="name" placeholder="Full name...">
+    <input type="text" name="email" placeholder="Email...">
+    <input type="text" name="uid" placeholder="Username...">
+    <input type="password" name="pwd" placeholder="Full name...">
+    <input type="password" name="pwdrepeat" placeholder="Repeat password...">
+    <button type="submit" name="submit">Sign Up</button>
 </form>
 
 </section>
