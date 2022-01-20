@@ -11,8 +11,30 @@ if (isset($_POST["submit"])) {
     require_once 'dbh.php' ;
     require_once 'functions.php' ;
 
+    if (emptyInputSignup($name, $email, $username, $pwd, $pwdRepeat) !== false) {
+        header("location: ../index.php?error=emptyinput");
+        exit();
+    }
+    if (invalidUid($username) !== false) {
+        header("location: ../index.php?error=invaliduid");
+        exit();
+    }
+    if (invalidEmail($email) !== false) {
+        header("location: ../index.php?error=invalidemail");
+        exit();
+    }
+    if (pwdMatch($pwd, $pwdRepeat) !== false) {
+        header("location: ../index.php?error=passwordsdontmatch");
+        exit();
+    }
+    if (uidExists($conn, $username) !== false) {
+        header("location: ../index.php?error=usernametaken");
+        exit();
+    }
+
 }
 
 else {
     header("location: ../index.php");
+    exit();
 }
