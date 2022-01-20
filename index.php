@@ -8,10 +8,14 @@
 </head>
 <body>
 
+<section class="signup-form">
+
 <form action="process.php" method="post">
     Enter your name: <input name="name" type="text">
     <input type="submit">
 </form>
+
+</section>
 
 </body>
 </html>
