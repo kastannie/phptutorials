@@ -1,0 +1,14 @@
+body {
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.signup-form {
+    text-align: center;
+    display: block;
+    width: 100%;
+}
